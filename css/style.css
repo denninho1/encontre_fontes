@@ -208,19 +208,19 @@ main {
     border-radius: 1rem;
 }
 
-.card.poppins .show_text {
+.card.poppins .text {
     font-family: 'Poppins';
 }
 
-.card.roboto .show_text {
+.card.roboto .text {
     font-family: 'Roboto';
 }
 
-.card.open-sans .show_text {
+.card.open-sans .text {
     font-family: 'Open Sans';
 }
 
-.card.lato .show_text {
+.card.lato .text {
     font-family: 'Lato';
 }
 
