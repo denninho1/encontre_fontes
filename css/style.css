@@ -114,4 +114,114 @@ main {
     color: #000;
 }
 
+/* 
+-------- CARDS STYLE ---------
+*/
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    place-items: center;
+    gap: 10px;
+}
+
+.card {
+    position: relative;
+    width: 30rem;
+    padding: 2rem;
+    background-color: #dbdbdb;
+    color: #000;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: 200ms linear;
+}
+
+.card:hover {
+    background-color: #ccc;
+}
+
+.card .name_font {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.card .text_container {
+    overflow: auto;
+    height: 15rem;
+}
+
+.card .show_text {
+    color: #000;
+    font-size: 1.6rem;
+    padding-bottom: .5rem;
+    display: block;
+    white-space: nowrap;
+}
+
+.card .show_text.one {
+    font-weight: 100;
+}
+
+.card .show_text.two {
+    font-weight: 200;
+}
+
+.card .show_text.three {
+    font-weight: 300;
+}
+.card .show_text.four {
+    font-weight: 400;
+}
+.card .show_text.five {
+    font-weight: 500;
+}
+
+.card .show_text.six {
+    font-weight: 600;
+}
+
+.card .show_text.seven {
+    font-weight: 700;
+}
+
+.card .show_text.eight {
+    font-weight: 800;
+}
+
+.card .show_text.nine {
+    font-weight: 900;
+}
+
+.card .text_container::-webkit-scrollbar {
+    width: .7rem;
+    height: .7rem;
+    background-color: transparent;
+}
+
+.card .text_container::-webkit-scrollbar-button {
+    background-color: none;
+}
+
+.card .text_container::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 1rem;
+}
+
+.card.poppins .show_text {
+    font-family: 'Poppins';
+}
+
+.card.roboto .show_text {
+    font-family: 'Roboto';
+}
+
+.card.open-sans .show_text {
+    font-family: 'Open Sans';
+}
+
+.card.lato .show_text {
+    font-family: 'Lato';
+}
+
 
