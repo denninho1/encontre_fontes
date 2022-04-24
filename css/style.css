@@ -18,7 +18,6 @@ body {
     overflow-x: hidden;
     font-size: 1.6rem;
     background-color: #eee;
-    height: 600rem;
 }
 
 main {
@@ -26,6 +25,7 @@ main {
     max-width: 1280px;
     margin: 0 auto;
     padding: 5rem 0;
+    position: relative;
 }
 
 /*
@@ -55,4 +55,63 @@ main {
     color: #333;
     font-weight: 500;
 }
+
+/* 
+---------- INPUTS SEARCH / YOUR TEXT --------
+*/
+.inputs {
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto 5rem;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+}    
+.inputs .inputbox:first-child {
+    border-right: .01rem solid #333;
+}
+
+.inputs .inputbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+
+}
+
+.inputs .inputbox .btn {
+    background-color: transparent;
+    font-size: 2rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.inputs .inputbox .input {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 0;
+    background-color: transparent;
+}
+
+.inputs .inputbox .label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+    transition: all 200ms linear;
+    color: #777;
+    font-weight: 600;
+}
+
+.inputs .inputbox input:valid ~ .label,
+.inputs .inputbox input:focus ~ .label {
+    top: 9px;
+    font-size: 1.1rem;
+    color: #000;
+}
+
 
