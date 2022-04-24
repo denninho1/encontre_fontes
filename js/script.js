@@ -18,4 +18,29 @@ yourText.addEventListener('input', () => {
     }
 });
 
+/* 
+--------- EFETIO DE HOVER NOS CARDS ------------
+*/
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        cards.forEach(cardBlur => {
+            card.style.filter = "blur(0px)";
+            card.style.transform = "scale(1.01)";
+            cardBlur.style.filter = "blur(.2rem)";
+            cardBlur.style.transform = "scale(0.9)";
+        })
+    }); 
+
+    card.addEventListener('mouseout', () => {
+        cards.forEach(cardBlur => {
+            card.style.filter = "blur(0px)";
+            card.style.transform = "scale(1)";
+            cardBlur.style.filter = "blur(0px)";
+            cardBlur.style.transform = "scale(1)";
+        })
+    });
+});
+
 
