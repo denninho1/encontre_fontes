@@ -80,7 +80,6 @@ main {
     align-items: center;
     position: relative;
     background-color: #fff;
-
 }
 
 .inputs .inputbox .btn {
@@ -141,11 +140,22 @@ main {
     background-color: #ccc;
 }
 
-.card .name_font {
+.card .card_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.card .card_heading .name_font {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    padding-bottom: 1rem;
+}
+
+.card .card_heading .link {
+    font-size: 2.5rem;
+    color: #333;
 }
 
 .card .text_container {
