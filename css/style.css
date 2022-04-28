@@ -191,22 +191,24 @@ main {
 -------- CARDS STYLE ---------
 */
 .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-    place-items: center;
-    gap: 10px;
+    display: flex;
+    /*grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    place-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
     position: relative;
-    width: 30rem;
+    flex: 1 1 25rem;
     padding: 2rem;
-    background-color: #dbdbdb;
+    background-color: #e7e7e7;
     color: #000;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
     overflow: hidden;
     transition: 200ms linear;
     z-index: 0;
+    margin: 10px;
 }
 
 .card:hover {
