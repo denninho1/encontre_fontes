@@ -10,7 +10,7 @@ function seeText () {
 
     if (yourTextValue === "") {
         showText.forEach(text => {
-            text.textContent = "digite seu texto";
+            text.textContent = "veja seu texto";
         })
     } else {
         showText.forEach(text => {

@@ -19,13 +19,14 @@ body {
     overflow-x: hidden;
     font-size: 1.6rem;
     background-color: #fff;
+
 }
 
 main {
     width: 95%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 5rem 0 10rem;
     position: relative;
 }
 
@@ -169,6 +170,7 @@ main {
     font-weight: 500;
     padding: 1rem 1rem 1rem 0;
     background-color: transparent;
+    color: #fff;
 }
 
 .inputs .inputbox .label {
@@ -311,4 +313,21 @@ main {
     font-family: 'Lato';
 }
 
+.read_more {
+    margin-top: 20px;
+}
 
+.read_more .btn {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    max-width: 20rem;
+    margin: 0 auto;
+    height: 5rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
