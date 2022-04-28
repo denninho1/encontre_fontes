@@ -3,8 +3,9 @@
 */
 const yourText = document.querySelector('.your_text');
 const showText = document.querySelectorAll('.show_text');
+const showTextBtn = document.querySelector('.show_text_btn');
 
-yourText.addEventListener('input', () => {
+function seeText () {
     let yourTextValue = yourText.value
 
     if (yourTextValue === "") {
@@ -16,7 +17,11 @@ yourText.addEventListener('input', () => {
             text.textContent = yourTextValue;
         })
     }
-});
+}
+
+yourText.addEventListener('input', seeText);
+showTextBtn.addEventListener('click', seeText);
+
 
 /* 
 --------- EFETIO DE HOVER NOS CARDS ------------
@@ -46,6 +51,6 @@ cards.forEach(card => {
 /* 
 ----------- SEARCH FONTS ----------
 */
-const searchInput = document.querySelector("search_input");
-const searchBtn = document.querySelector("search_btn");
+const searchInput = document.querySelector('search_input');
+const searchBtn = document.querySelector('search_btn');
 
