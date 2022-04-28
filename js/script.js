@@ -43,4 +43,9 @@ cards.forEach(card => {
     });
 });
 
+/* 
+----------- SEARCH FONTS ----------
+*/
+const searchInput = document.querySelector("search_input");
+const searchBtn = document.querySelector("search_btn");
 
