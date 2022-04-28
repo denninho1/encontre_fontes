@@ -21,15 +21,15 @@ yourText.addEventListener('input', () => {
 /* 
 --------- EFETIO DE HOVER NOS CARDS ------------
 */
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.cards .card');
 
 cards.forEach(card => {
     card.addEventListener('mouseover', () => {
         cards.forEach(cardBlur => {
             card.style.filter = "blur(0px)";
-            card.style.transform = "scale(1.01)";
+            card.style.transform = "scale(1.02)";
             cardBlur.style.filter = "blur(.1rem)";
-            cardBlur.style.transform = "scale(0.9)";
+            cardBlur.style.transform = "scale(0.95)";
         })
     }); 
 
