@@ -18,7 +18,7 @@ html {
 body {
     overflow-x: hidden;
     font-size: 1.6rem;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 main {
@@ -142,7 +142,7 @@ main {
     border-radius: 1rem;
 }    
 .inputs .inputbox:first-child {
-    border-right: .01rem solid #333;
+    border-right: .01rem solid #fff;
 }
 
 .inputs .inputbox {
@@ -151,13 +151,14 @@ main {
     display: flex;
     align-items: center;
     position: relative;
-    background-color: #fff;
+    background-color: #333;
 }
 
 .inputs .inputbox .btn {
     background-color: transparent;
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 0 1rem;
+    color: #eee;
     cursor: pointer;
 }
 
@@ -176,15 +177,14 @@ main {
     transform: translateY(-50%);
     left: 40px;
     transition: all 200ms linear;
-    color: #777;
-    font-weight: 600;
+    color: #fff;
+    font-weight: 400;
 }
 
 .inputs .inputbox input:valid ~ .label,
 .inputs .inputbox input:focus ~ .label {
     top: 9px;
     font-size: 1.1rem;
-    color: #000;
 }
 
 /* 
