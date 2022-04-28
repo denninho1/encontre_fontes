@@ -68,14 +68,14 @@ main {
     z-index: 100;
 }
 
-.social ul {
+.social .social_list {
     display: flex;
     align-items: center;
     gap: 20px;
 
 }
 
-.social ul li {
+.social .social_list .item {
     position: relative;
     border-radius: 50%;
     width: 5rem;
@@ -85,17 +85,17 @@ main {
 
 }
 
-.social ul li:hover {
+.social .social_list .item:hover {
     transform: scale(1.1);
     background-color: #333;
 }
 
-.social ul li:hover .cards .card {
+.social .social_list .item:hover .cards .card {
     filter: blur(3px);
 }
 
 
-.social ul li .social_name {
+.social .social_list .item .social_name {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -111,13 +111,13 @@ main {
     color: #000;
 }
 
-.social ul li:hover .social_name {
+.social .social_list .item:hover .social_name {
     bottom: 6rem;
     opacity: 1;
     font-size: 1.6rem;
 }
 
-.social ul li .link {
+.social .social_list .item .link {
     display: flex;
     align-items: center;
     justify-content: center;
