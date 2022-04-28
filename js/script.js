@@ -10,7 +10,7 @@ function seeText () {
 
     if (yourTextValue === "") {
         showText.forEach(text => {
-            text.textContent = "veja seu texto";
+            text.textContent = "digite seu texto";
         })
     } else {
         showText.forEach(text => {
@@ -21,7 +21,6 @@ function seeText () {
 
 yourText.addEventListener('input', seeText);
 showTextBtn.addEventListener('click', seeText);
-
 
 /* 
 --------- EFETIO DE HOVER NOS CARDS ------------
