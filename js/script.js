@@ -28,7 +28,7 @@ cards.forEach(card => {
         cards.forEach(cardBlur => {
             card.style.filter = "blur(0px)";
             card.style.transform = "scale(1.01)";
-            cardBlur.style.filter = "blur(.2rem)";
+            cardBlur.style.filter = "blur(.1rem)";
             cardBlur.style.transform = "scale(0.9)";
         })
     }); 
@@ -37,7 +37,7 @@ cards.forEach(card => {
         cards.forEach(cardBlur => {
             card.style.filter = "blur(0px)";
             card.style.transform = "scale(1)";
-            cardBlur.style.filter = "blur(0px)";
+            cardBlur.style.filter = "blur(0rem)";
             cardBlur.style.transform = "scale(1)";
         })
     });
