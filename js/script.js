@@ -53,3 +53,11 @@ cards.forEach(card => {
 const searchInput = document.querySelector('search_input');
 const searchBtn = document.querySelector('search_btn');
 
+
+
+/* 
+----------- SUMIR REDES SOCIAIS ---------------
+----------- QUANDO CHEGAR NO FOOTER -----------
+*/
+
+const redesSociais = document.querySelector('.social');
