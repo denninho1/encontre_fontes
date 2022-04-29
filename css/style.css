@@ -8,6 +8,7 @@
     border: none;
     outline: none;
     list-style: none;
+    text-decoration: none;
 }
 
 html {
@@ -26,7 +27,7 @@ main {
     width: 95%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 5rem 0 10rem;
+    padding: 5rem 0 0;
     position: relative;
 }
 
@@ -364,4 +365,28 @@ main {
 .read_more .btn:hover {
     background-color: #444;
     letter-spacing: 5px;
+}
+
+footer {
+    margin-top: 20vh;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+ 
+}
+
+footer span, footer span a {
+    color: #fff;
+    text-transform: lowercase;
+    font-family: 'Nunito';
+    letter-spacing: 2px;
+}
+
+footer span a {
+    color: #00c2fd;
+    transition: 200ms linear;
+}
+
+footer span a:hover {
+    color: #08a0ce;
 }
