@@ -61,3 +61,16 @@ const searchBtn = document.querySelector('search_btn');
 */
 
 const redesSociais = document.querySelector('.social');
+
+window.addEventListener('scroll', () => {
+    const documento = document.documentElement;
+    const scrollTotal = parseInt((documento.scrollHeight - documento.clientHeight))
+    const scroll = window.scrollY
+
+    if (scroll === scrollTotal) {
+        redesSociais.classList.add('remove')
+    } else {
+        redesSociais.classList.remove('remove')
+    }
+
+})
