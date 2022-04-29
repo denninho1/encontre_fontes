@@ -66,8 +66,13 @@ main {
     position: fixed;
     bottom: 3rem;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1);
     z-index: 100;
+    transition: 150ms linear;
+}
+
+.social.remove {
+   transform: translateX(-50%) scale(0);
 }
 
 .social .social_list {
@@ -390,3 +395,9 @@ footer span a {
 footer span a:hover {
     color: #08a0ce;
 }
+
+
+
+/* 
+----------- ANIMAÇOES ----------
+*/
