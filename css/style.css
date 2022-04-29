@@ -214,7 +214,7 @@ main {
 }
 
 .card:hover {
-    background-color: #ccc;
+    background-color: #d3d3d3;
 }
 
 .card .card_heading {
@@ -313,6 +313,34 @@ main {
     font-family: 'Lato';
 }
 
+.card.montserrat .text {
+    font-family: 'Montserrat';
+}
+
+.card.oswald .text {
+    font-family: 'Oswald';
+}
+
+.card.roboto-mono .text {
+    font-family: 'Roboto Mono';
+}
+
+.card.ubunto .text {
+    font-family: 'Ubunto';
+}
+
+.card.raleway .text {
+    font-family: 'Raleway';
+}
+
+.card.nunito .text {
+    font-family: 'Nunito';
+}
+
+.card.rubik .text {
+    font-family: 'Rubik';
+}
+
 .read_more {
     margin-top: 20px;
 }
@@ -330,4 +358,10 @@ main {
     letter-spacing: 3px;
     font-weight: 600;
     cursor: pointer;
+    transition: 200ms linear;
+}
+
+.read_more .btn:hover {
+    background-color: #444;
+    letter-spacing: 5px;
 }
