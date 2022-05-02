@@ -78,3 +78,14 @@ window.addEventListener('scroll', () => {
         redesSociais.classList.remove('remove')
     }
 })
+
+/* 
+------------- VER MAIS FONTS / BOTÃO READ MORE ------------
+*/
+const readMore = document.querySelector('.read_more .btn');
+
+function verMais() {
+
+}
+
+readMore.addEventListener('click', verMais());
