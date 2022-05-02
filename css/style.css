@@ -208,30 +208,30 @@ main {
 
 .card {
     position: relative;
-    flex: 1 1 25rem;
-    padding: 2rem;
+    flex: 1 2 21.5rem;
+    padding: 2rem 0;
     background-color: #e7e7e7;
     color: #000;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
     overflow: hidden;
-    transition: 200ms linear;
+    transition: 150ms linear;
     z-index: 0;
     margin: 10px;
 }
 
 .card:hover {
-    background-color: #d3d3d3;
+    background-color: rgb(252, 252, 252);
 }
 
 .card .card_heading {
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .card .card_heading .name_font {
-    display: block;
     font-size: 2rem;
     font-weight: 700;
 }
@@ -244,6 +244,7 @@ main {
 .card .text_container {
     overflow: auto;
     height: 15rem;
+    margin: 0 2rem;
 }
 
 .card .show_text {
@@ -397,7 +398,24 @@ footer span a:hover {
 }
 
 
-
 /* 
------------ ANIMAÇOES ----------
+----------- RESPONSIVIDADE -------------
 */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 540px) {
+    .inputs {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .inputs .inputbox:first-child {
+        border-right: none;
+        border-bottom: 3px solid #fff;
+    }
+}
+
