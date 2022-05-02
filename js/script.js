@@ -26,26 +26,29 @@ showTextBtn.addEventListener('click', seeText);
 --------- EFETIO DE HOVER NOS CARDS ------------
 */
 const cards = document.querySelectorAll('.cards .card');
+const telaMonitor = window.innerWidth;
 
-cards.forEach(card => {
-    card.addEventListener('mouseover', () => {
-        cards.forEach(cardBlur => {
-            card.style.filter = "blur(0px)";
-            card.style.transform = "scale(1.02)";
-            cardBlur.style.filter = "blur(.1rem)";
-            cardBlur.style.transform = "scale(0.95)";
-        })
-    }); 
-
-    card.addEventListener('mouseout', () => {
-        cards.forEach(cardBlur => {
-            card.style.filter = "blur(0px)";
-            card.style.transform = "scale(1)";
-            cardBlur.style.filter = "blur(0rem)";
-            cardBlur.style.transform = "scale(1)";
-        })
+if (telaMonitor >= 991) {
+    cards.forEach(card => {
+        card.addEventListener('mouseover', () => {
+            cards.forEach(cardBlur => {
+                card.style.filter = "blur(0px)";
+                card.style.transform = "scale(1.02)";
+                cardBlur.style.filter = "blur(.1rem)";
+                cardBlur.style.transform = "scale(0.95)";
+            })
+        }); 
+    
+        card.addEventListener('mouseout', () => {
+            cards.forEach(cardBlur => {
+                card.style.filter = "blur(0px)";
+                card.style.transform = "scale(1)";
+                cardBlur.style.filter = "blur(0rem)";
+                cardBlur.style.transform = "scale(1)";
+            })
+        });
     });
-});
+}
 
 /* 
 ----------- FILTRAR AS FONTS QUE ESTÃO SENDO PROCURADAS ----------
