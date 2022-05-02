@@ -48,18 +48,23 @@ cards.forEach(card => {
 });
 
 /* 
------------ SEARCH FONTS ----------
+----------- FILTRAR AS FONTS QUE ESTÃO SENDO PROCURADAS ----------
 */
-const searchInput = document.querySelector('search_input');
-const searchBtn = document.querySelector('search_btn');
+const searchInput = document.querySelector('.search_input');
+const searchBtn = document.querySelector('.search_btn');
+const nameFont = document.querySelector('.name_font');
+let searchValue = searchInput.value;
 
+function filtrar() {}
+
+searchInput.addEventListener('keyup', () => {});
+searchBtn.addEventListener('click', () => {});
 
 
 /* 
 ----------- SUMIR REDES SOCIAIS ---------------
 ----------- QUANDO CHEGAR NO FOOTER -----------
 */
-
 const redesSociais = document.querySelector('.social');
 
 window.addEventListener('scroll', () => {
@@ -72,5 +77,4 @@ window.addEventListener('scroll', () => {
     } else {
         redesSociais.classList.remove('remove')
     }
-
 })
